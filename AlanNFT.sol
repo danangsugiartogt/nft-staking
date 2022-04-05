@@ -10,7 +10,7 @@ contract AlanNFT is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
     Counters.Counter private _tokenIds;
 
-    constructor() ERC721("GameItem", "ITM") {}
+    constructor() ERC721("AlanNFT", "ANFT") {}
 
     function awardItem(address player, string memory tokenURI)
         public onlyOwner
